@@ -1,0 +1,121 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px 12px;
+  width: 160px;
+  cursor: pointer;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.card:active {
+  transform: scale(0.97);
+}
+.card.learned {
+  opacity: 0.5;
+}
+
+.card strong {
+  font-size: 1.1rem;
+}
+
+.card .transcription {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+.card-inner {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* по центру по горизонтали */
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.filters label {
+  font-size: 0.95rem;
+  background-color: #f4f4f4;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+.filters input[type="radio"]:checked + span {
+  background-color: #d0eaff;
+  font-weight: bold;
+}
+
+.filters span {
+  display: inline-block;
+}
+
+.hint {
+  margin-top: 16px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
