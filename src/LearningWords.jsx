@@ -64,7 +64,7 @@ window.speechSynthesis.onvoiceschanged = () => {};
             key={entry.id}
             onClick={() => {
               speak(entry.word);
-              toggleFlip(entry.id);
+              setTimeout(() => toggleFlip(entry.id), 500);
             }}
             onDoubleClick={() => toggleLearned(entry.id)}
             className={`card ${entry.learned ? "learned" : ""}`}
